@@ -1,0 +1,22 @@
+# novel2hongguo Configuration Example
+
+gemini:
+  model_name: "gemini-3.8-flash"
+  api_key: "YOUR_GEMINI_API_KEY"
+
+render:
+  gpu_workers:
+    - id: 0
+      comfyui_url: "http://127.0.0.1:8188"
+      device_name: "NVIDIA GeForce RTX 4090 48GB (GPU 0)"
+    - id: 1
+      comfyui_url: "http://127.0.0.1:8189"
+      device_name: "NVIDIA GeForce RTX 4090 48GB (GPU 1)"
+  default_model: "Wan2.1-T2V-14B"
+  resolution: [720, 1280] # 9:16 vertical video for mobile drama
+  fps: 24
+
+paths:
+  raw_novels_dir: "./data/raw_novels"
+  processed_scripts_dir: "./data/processed_scripts"
+  output_videos_dir: "./data/output_videos"

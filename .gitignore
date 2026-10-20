@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment and Configs
+.env
+config/config.yaml
+
+# Large Data & Media
+data/raw_novels/*
+!data/raw_novels/.gitkeep
+data/processed_scripts/*
+!data/processed_scripts/.gitkeep
+data/output_videos/*
+!data/output_videos/.gitkeep
+temp/
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
+
+# Model weights & Checkpoints
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.onnx
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
