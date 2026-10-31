@@ -15,8 +15,6 @@ config/config.yaml
 # Large Data & Media
 data/raw_novels/*
 !data/raw_novels/.gitkeep
-data/processed_scripts/*
-!data/processed_scripts/.gitkeep
 data/output_videos/*
 !data/output_videos/.gitkeep
 temp/
@@ -25,6 +23,13 @@ temp/
 *.mov
 *.wav
 *.mp3
+
+# PRIVATE CREATIVE ASSETS (DO NOT UPLOAD TO GITHUB)
+data/processed_scripts/*
+!data/processed_scripts/.gitkeep
+*.html
+preview_drama.html
+scripts/private_*
 
 # Model weights & Checkpoints
 *.safetensors
